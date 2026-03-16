@@ -69,7 +69,7 @@ bash warp_generator.sh
 ## Unable to create Wintun interface
 
 ### Решение 1: Удаление записи в реестре
-1.  Откройте "Редактор реестра" в Windows. Его можно найти в поиске, либо [выполнить команду](https://wiki.malw.link/windows/run) `regedit`.
+1.  Откройте "Редактор реестра" в Windows. Его можно найти в поиске, либо выполнить команду `regedit`.
 2.  Перейдите в **HKEY_CLASSES_ROOT** -> **CLSID**. Найдите и удалите раздел `{3d09c1ca-2bcc-40b7-b9bb-3f3ec143a87b}`.
 3.  Перезапустите приложение AmneziaWG.
 
@@ -77,7 +77,7 @@ bash warp_generator.sh
 
 1.  Удалите AmneziaWG в "Программах и компонентах"
 2.  Скопируйте полный путь к .msi файлу установщика AmneziaWG. Для этого, **удерживая Shift**, нажмите правой кнопкой мыши по нему -> Копировать как путь
-3.  Откройте [Командную строку от имени администратора](https://wiki.malw.link/windows/run)
+3.  Откройте Командную строку от имени администратора
 4.  Вставьте в командную строку скопированный путь, нажав по ней правой кнопкой мыши, нажмите Enter
 
 Таким образом, msi файл будет открыт от имени администратора, возможно, это решит проблему.
@@ -85,7 +85,7 @@ bash warp_generator.sh
 ### Решение 3: Удаление драйвера wintun:
 
 1.  Удалите AmneziaWG в "Программах и компонентах"
-2.  Откройте [Командную строку от имени администратора](https://wiki.malw.link/windows/run)
+2.  Откройте Командную строку от имени администратора
 3.  Выполните команды:
     ```bat
     dism /online /get-drivers /format:table > drivers.txt
@@ -103,7 +103,7 @@ bash warp_generator.sh
 
 ### Решение 4: AmneziaVPN вместо AmneziaWG
 
-Приложение [AmneziaVPN](https://wiki.malw.link/network/vpns/amneziavpn) полностью поддерживает конфиги протокола AmneziaWG.
+Приложение [AmneziaVPN](https://storage.googleapis.com/amnezia/amnezia.org) полностью поддерживает конфиги протокола AmneziaWG.
 
 ## Не работают соединения к локальной сети
 
